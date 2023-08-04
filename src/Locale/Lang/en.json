@@ -1,0 +1,28 @@
+{
+    "current": "en",
+
+    "sidePane": {
+        "credits": "Provided by"
+    },
+    "weather": {
+        "feels_like": "Feels Like",
+        "humidity": "Humidity"
+    },
+    "highlights": {
+        "title": "Today's Highlights"
+    },
+    "searchbar": {
+        "placeholder": "Select...",
+        "loadingText": "Loading...",
+        "noMatch": "No match"
+    },
+    "weekdays": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ]
+}

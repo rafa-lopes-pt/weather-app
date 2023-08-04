@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Generic */
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(1) brightness(55%) hue-rotate(20deg) contrast(200%);
+    z-index: -1;
+}
+body {
+    background: linear-gradient(135deg, #0a1c55 0%, #185977 100%);
+    overflow: hidden;
+}
+
+.onload-animation {
+    transition: all 1200ms;
+}
+.glass-container {
+    /* background-color: rgba(255 , 255, 255, 0.5); */
+    background-image: linear-gradient(135deg, #ffe1 0%, #ffe5 100%);
+    box-shadow: 2px 2px 10px 2px #ffe7;
+    padding: 1.5rem;
+    border-radius: 2em;
+    transition: box-shadow 0.35s;
+}
+
+.side-pane {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.onload-animation.glass-container {
+    transition: all 1200ms, box-shadow 0.35s;
+}
+
+.glass-container > * {
+    color: #ffe;
+}
+/* Buttons */
+.btn {
+    color: #333;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-out;
+}
+.btn--disabled {
+    opacity: 0.8;
+}
+.btn__option-selected {
+    cursor: none;
+    pointer-events: none;
+}
+.btn--primary {
+    background-color: #ffe8;
+    box-shadow: 2px 2px 20px 2px #2225;
+}
+.btn--primary:hover {
+    box-shadow: 2px 2px 20px 5px #3338;
+}
+.btn--secondary {
+    background-color: #4445;
+    /* bg-[#3359] text-[#ddd] opacity-30 */
+}
+
+/* Typography */
+body {
+    font-size: 16px;
+    color: #223;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+/* Forecast Day */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6em, 13em));
+    justify-content: center;
+    align-items: baseline;
+}
+
+.forecast-container {
+    box-shadow: 2px 2px 10px 2px #ffe7;
+    transition: box-shadow 0.35s;
+}
+
+.forecast-container:hover {
+    box-shadow: 2px 2px 15px 1px #ffec, inset 2px 2px 20px 2px #ffe5;
+}
+
+.weather-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(1000%)
+        contrast(1000%);
+}

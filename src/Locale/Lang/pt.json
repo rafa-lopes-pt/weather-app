@@ -1,0 +1,27 @@
+{
+    "current": "pt",
+    "sidePane": {
+        "credits": "Através de"
+    },
+    "weather": {
+        "feels_like": "Sensação Térmica",
+        "humidity": "Humidade"
+    },
+    "highlights": {
+        "title": "Informação Diária"
+    },
+    "searchbar": {
+        "placeholder": "Selecionar...",
+        "loadingText": "A carregar...",
+        "noMatch": "Sem resultados"
+    },
+    "weekdays": [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado"
+    ]
+}
