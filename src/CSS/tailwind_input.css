@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* Generic */
+* {
+    overflow: hidden;
+}
 body::before {
     content: "";
     display: block;
@@ -17,7 +20,6 @@ body::before {
 }
 body {
     background: linear-gradient(135deg, #0a1c55 0%, #185977 100%);
-    overflow: hidden;
 }
 
 .onload-animation {
