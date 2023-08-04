@@ -31,7 +31,7 @@ export default function SidePane({
                     </h3>
 
                     <img
-                        src={`src/Components/Common/icons/${data.weatherData?.icon}.png`}
+                        src={`./icons/${data.weatherData?.icon}.png`}
                         alt={"Weather Icon"}
                         className="weather-icon w-[75%] md:w-[30%]"
                     />
@@ -59,7 +59,7 @@ export default function SidePane({
             <span className="flex flex-col items-center">
                 <span className="flex items-center space-x-2 my-3">
                     <img
-                        src="/src/Components/Common/icons/location.png"
+                        src="./icons/location.png"
                         className="h-6 weather-icon"
                     ></img>
                     <h3 className=" text-lg md:text-2xl">
