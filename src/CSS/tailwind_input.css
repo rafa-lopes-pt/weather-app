@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Generic */
-* {
+#root,body,main{
     overflow: hidden;
 }
 body::before {

@@ -45,7 +45,7 @@ function App() {
     return (
         <main
             className="
-                 h-[100svh]
+                 h-[100svh] 
                 flex justify-between
                 relative
                 "
@@ -63,7 +63,8 @@ function App() {
                     w-[45%] h-[75%] self-end
                     
                     md:w-[33%] md:h-full 
-                    
+                    z-20
+                    absolute md:relative
                     `}
                 data={{ weatherData, currentLocation }}
             ></SidePane>
@@ -71,7 +72,6 @@ function App() {
             <div
                 className={`
                             w-[100%] md:w-[67%] 
-                           
                             p-3 md:p-10 
                             flex flex-col justify-between
                             space-y-4
@@ -89,13 +89,14 @@ function App() {
                     onload-animation
                     ${
                         !currentLocation &&
-                        `top-1/2 -left-[25%] md:-left-[16.667%] 
-                         -translate-y-1/2 -translate-x-[25%] md:-translate-x-[12.5%]
+                        `top-1/2 left-1/2 md:-left-[16.667%] 
+                         -translate-y-1/2 -translate-x-1/2 md:-translate-x-[12.5%]
                         `
                     }
                     ${
                         currentLocation &&
-                        `top-0 -left-[25%] -translate-x-[25%] md:left-[0%] md:-translate-x-0 md:-translate-y-0
+                        `top-0 left-1/2 -translate-x-1/2 md:left-[0%] md:-translate-x-0 
+                         md:-translate-y-0
                         `
                     }
                     
@@ -104,12 +105,12 @@ function App() {
                 {/* Forecast */}
                 <div
                     className={`
-                    w-[65%] md:w-full
+                    w-[50%] md:w-full
                     h-[75%] md:h-auto
                     forecast-grid
                     onload-animation
                     overflow-scroll
-
+                    self-end
                     ${currentLocation ? "opacity-100" : "opacity-0"}`}
                 >
                     {forecastData?.map((el, i) => (
