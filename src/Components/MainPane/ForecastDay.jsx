@@ -24,7 +24,7 @@ export default function ForecastDay({ data = {}, ...props }) {
                     {data.temp + " " + locale.units.temp}
                 </h4>
                 <img
-                    src={`src/Components/Common/icons/${data.icon}.png`}
+                    src={`./assets/icons/${data.icon}.png`}
                     alt={data.title}
                     className={`
                         w-[2.0em] md:w-[3em] 
