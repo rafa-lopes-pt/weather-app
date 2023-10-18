@@ -77,6 +77,23 @@ function App() {
                             space-y-4
                             `}
             >
+                <h1
+                    className={`
+                    absolute top-[30vmin] left-1/2 -translate-x-1/2 
+                    text-4xl
+                    md:text-[3.5rem] text-white font-bold
+                   flex items-center justify-center w-full
+                   transition-opacity 
+                   opacity-${currentLocation ? "0" : "1"}
+                    `}
+                >
+                    <img
+                        src="./icons/02d.png"
+                        alt=""
+                        className=" weather-icon mr-4"
+                    ></img>
+                    Weather Forecast
+                </h1>
                 <SearchBar
                     onCitySelect={setCurrentLocation}
                     onLangSelect={setLang}
@@ -109,7 +126,7 @@ function App() {
                     h-[75%] md:h-auto
                     forecast-grid
                     onload-animation
-                    overflow-scroll
+                    overflow-auto
                     self-end
                     ${currentLocation ? "opacity-100" : "opacity-0"}`}
                 >

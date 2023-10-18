@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* Generic */
-#root,body,main{
+#root,
+body,
+main {
     overflow: hidden;
 }
 body::before {
@@ -98,4 +100,20 @@ body {
 .weather-icon {
     filter: invert(100%) sepia(0%) saturate(0%) brightness(1000%)
         contrast(1000%);
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+    border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #676767;
 }

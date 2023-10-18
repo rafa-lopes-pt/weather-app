@@ -27,7 +27,6 @@ export default function SearchBar({
             ${props.className}
             `)}
         >
-            {/* <div className="flex "> */}
             <Select
                 className="w-full"
                 src={(search) => getCities(search)}
